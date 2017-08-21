@@ -7,7 +7,7 @@ public class TestPatient {
         char bloodType = 'O', rhFactor = '+';
         Patient p1 = new Patient(idNum, age, bloodType, rhFactor);
         p1.getBloodData();
-        p1.setBloodData("A", '-');
+        //p1.setBloodData("A", '-');
         p1.setIdNum(1230123);
         p1.setAge(20);
         idNum = p1.getIdNum();
