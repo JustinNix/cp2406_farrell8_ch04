@@ -1,7 +1,8 @@
 /**
  * Created by jc428352 on 18/08/17.
  */
-import java.util.Scanner;
+import java.util.Calendar;
+import java.util.Date;
 public class FitnessTracker {
     private String activity;
     private int numMinutes;
@@ -10,26 +11,37 @@ public class FitnessTracker {
     public FitnessTracker(){
         activity="running";
         numMinutes = 1;
-        date = "1/1/2017";
+        date = "1/1/1";
     }
 
-    public FitnessTracker(String enteredActivity, int enteredNumMinutes, String enteredDate){
-        activity = enteredActivity;
-        numMinutes = enteredNumMinutes;
-        date = enteredDate;
+    public FitnessTracker(String activity, int numMinutes, String date){
+        this.activity = activity;
+        this.numMinutes = numMinutes;
+        this.date = date;
     }
 
-    public String getActivity(){
-        Scanner input = new Scanner(System.in);
-        return input.nextLine();
+    public int getNumMinutes() {
+        return numMinutes;
     }
-    public int getMinutes(){
-        Scanner input = new Scanner(System.in);
-        return input.nextInt();
+
+    public String getActivity() {
+        return activity;
     }
-    public String getDate(){
-        Scanner input = new Scanner(System.in);
-        return input.nextLine();
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setActivity(String activity) {
+        this.activity = activity;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setNumMinutes(int numMinutes) {
+        this.numMinutes = numMinutes;
     }
 
     public void display(String activity, int numMinutes, String date){

@@ -4,14 +4,8 @@
 
 public class TestFitnessTracker {
     public static void main(String[] args){
-        String activity;
-        int numMinutes;
-        String date;
         FitnessTracker p1 = new FitnessTracker();
-        activity = p1.getActivity();
-        numMinutes = p1.getMinutes();
-        date = p1.getDate();
-        p1.display(activity, numMinutes, date);
+        p1.display(p1.getActivity(),p1.getNumMinutes(),p1.getDate());
 
     }
 }
